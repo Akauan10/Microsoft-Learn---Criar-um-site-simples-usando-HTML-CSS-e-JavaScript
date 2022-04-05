@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <!--utf-8 é um conjunto de caracteres universal que inclui praticamente qualquer caractere
+        de qualquer linguagem humana.
+        Isso significa que sua página web poderá lidar com a exibição de qualquer idioma,
+        exemplo com que a página podera lidar com o inglês e o japonês muito bom.-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Essa meta em cima é bastante importante, onde o website será visualizado em
+            dispositivos mobile, ajustando com a própria largura do navegador do dispositivo.
+            content="width=device-width,"-->
+    <title>Site Simples</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="light-theme">
+    <h1>Task List</h1>
+    <p id="msg">Current tasks:</p>
+    <ul>
+        <li class="list">Add visual styles</li>
+        <li class="list">Add light and dark themes</li>
+        <li>Enable switching the theme</li>
+    </ul>
+    <div>
+        <button class="btn">Dark</button>
+    </div>
+    <script src="app.js"></script>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
+    <!-- A adição do elemento <noscript> é um exemplo de <noscript> ou degradação gradual. 
+        Com o elemento <noscript>, seu código pode detectar e planejar quando um recurso não tem 
+        suporte ou não está disponível.-->
+    
+</body>
+</html>

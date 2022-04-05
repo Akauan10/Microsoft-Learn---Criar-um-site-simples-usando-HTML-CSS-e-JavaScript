@@ -1,0 +1,81 @@
+:root {
+   --green: #00FF00;
+   --whithe: #ffffff;
+   --black: #000000;
+}
+
+* {
+    color: var(--fontColor); 
+    font-family: helvetica;
+}                /*O seletor * é universal e se 
+aplica a todos os elementos da página (exceto quando um seletor de elemento mais específico o 
+substitui). Neste exemplo, use o seletor * para definir a propriedade color padrão para todos os 
+elementos da página. Para as propriedades color e background, especifique as variáveis
+definidas nos seletores de tema claro e escuro.*/
+
+body {
+    background:var(--bg);
+}
+
+ul {
+    font-family: helvetica;
+}
+
+li {
+    list-style: circle;
+}
+
+.list {
+    list-style: square;
+}
+
+/* Em seguida o exercicio pede para que adicione
+um suporte para temas de cores para o site, como aqui em baixo.*/ 
+
+.light-theme {
+   --bg: var(--green);
+   --fontColor: var(--black);
+   --btnBg: var(--black);
+   --btnFontColor: var(--white);
+}
+
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--green);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+}
+
+/* O #000000; especufuca preto como a cor da fonte e #00FF00
+especifica verde para a cor de tela de fundo. Após ter coloca as cores da fonte
+e da tela de fundo, então pede para que atualize o elemento <body> com um nome
+de classe, light-theme,e o seletor de classe para tema claro aplicará os estilos corretamente.
+
+Na etapa seguintes será subistituido o seletor e será atualizado.
+.light-theme {
+    color: #000000;
+    background: #00FF00;
+}
+*/
+
+.btn {
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+
+.btn {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+
+.btn:focus { outline-style: none; }           /*Para melhorar a aparência do botão, 
+                adicione um seletor de pseudoclasse, btn:focus, após o seletor de botão. 
+                Ao definir a regra de outline-style como none, você elimina um contorno 
+                retangular quando o botão é selecionado (recebe foco).
